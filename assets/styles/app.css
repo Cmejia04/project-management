@@ -1,3 +1,41 @@
-body {
-    background-color: skyblue;
+.bg-primary-custom {
+    background-color: #000000;
 }
+
+.bg-primary-dark {
+    background-color: #052c65;
+}
+
+.bg-primary-medium {
+    background-color: #4f7ba7;
+}
+
+.bg-primary-light {
+    background-color: #1a5fc8;
+}
+
+/* Estilo del header del listado */
+.list-header {
+    background-color: #0b3d91;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+/* Tabla con paleta de azules */
+.table-blue thead {
+    background-color: #052c65;
+    color: #ffffff;
+}
+.table-blue tbody tr:nth-child(odd) {
+    background-color: #1a5fc8;
+    color: #ffffff;
+}
+.table-blue tbody tr:nth-child(even) {
+    background-color: #4a8fe0;
+    color: #ffffff;
+}
+.badge-status-active { background-color: #0b3d91; }
+.badge-status-progress { background-color: #1a5fc8; color: #fff; }
+.badge-status-delayed { background-color: #4a8fe0; color: #fff; }

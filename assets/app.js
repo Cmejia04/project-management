@@ -1,4 +1,9 @@
-import './bootstrap.js';
+// Importar CSS de Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Importar JS de Bootstrap
+import 'bootstrap';
+
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -7,4 +12,7 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+import { createApp } from 'vue'
+import App from './vue/App.vue'
+
+createApp(App).mount('#app')

@@ -27,7 +27,6 @@
                         </span>
                     </td>
                     <td>
-<!--                        <a v-if="user.tasks.length" @click="openModal(user)">Ver Tareas</a>-->
                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tasksModal" @click="fetchTasksByUser(user.id)">
                             Ver tareas
                         </button>
@@ -58,10 +57,10 @@
                 </thead>
                 <tbody>
                     <tr v-for="task in tasks" :key="task.id">
-                        <td>{{ task.name }}</td>
+                        <td class="fw-bold">{{ task.name }}</td>
                         <td>{{ task.description }}</td>
-                        <td>{{ task.project }}</td>
-                        <td>{{ task.rate ? "$" + task.rate : "$0" }}</td>
+                        <td class="fw-bold">{{ task.project }}</td>
+                        <td class="fw-bold">{{ task.rate ? "$" + task.rate : "$0" }}</td>
                         <td>{{ task.user }}</td>
                         <td>
                         <span class="badge" :class="task.active ? 'badge-status-active' : 'badge-status-delayed'">

@@ -21,10 +21,10 @@ class UserController extends AbstractController
 
     #[Route('/api/user/{user}/tasks', name: 'api_user_tasks', methods: ['GET'])]
     public function getTasksByUser(
-        TaskProvider $userProvider,
+        TaskProvider $taskProvider,
         User $user,
     ): JsonResponse
     {
-        return $this->json($userProvider->getTasksByUser($user));
+        return $this->json($taskProvider->getTasksByUser($user));
     }
 }

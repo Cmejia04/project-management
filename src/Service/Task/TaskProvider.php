@@ -24,6 +24,5 @@ class TaskProvider
     public function getTasksByUser(User $user): array
     {
         return array_map(fn(UserProject $userProject) => ListTaskDTO::fromEntity($userProject->getTasks()->first()), $user->getUserProjects()->toArray());
-
     }
 }
